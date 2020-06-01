@@ -1,0 +1,28 @@
+{
+    "streams": [
+	{
+	    "flows": 1024,
+	    "frame_size": 9000,
+	    "flow_mods": "function:create_flow_mod_object(use_src_ip_flows=True, use_dst_ip_flows=True, use_src_port_flows=True, use_dst_port_flows=True)",
+	    "rate": 346452,
+	    "stream_types": [
+		"measurement"
+	    ],
+	    "traffic_direction": "unidirectional",
+	    "the_packet": "scapy:Ether(src='3c:fd:fe:b8:99:a4', dst='MAC_A')/IP(src='192.168.201.100', dst='192.168.200.100')/UDP(sport=10000, dport=20000)",
+	    "enabled": true
+	},
+	{
+	    "flows": 1024,
+	    "frame_size": 9000,
+	    "flow_mods": "function:create_flow_mod_object(use_src_ip_flows=True, use_dst_ip_flows=True, use_src_port_flows=True, use_dst_port_flows=True)",
+	    "rate": 346452,
+	    "stream_types": [
+		"measurement"
+	    ],
+	    "traffic_direction": "revunidirectional",
+	    "the_packet": "scapy:Ether(src='MAC_B', dst='3c:fd:fe:bc:f4:e0')/IP(src='192.168.201.150', dst='192.168.200.150')/UDP(sport=40000, dport=30000)",
+	    "enabled": true
+	}
+    ]
+}
