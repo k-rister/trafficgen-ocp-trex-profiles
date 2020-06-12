@@ -9,7 +9,7 @@
 		"measurement"
 	    ],
 	    "traffic_direction": "unidirectional",
-	    "the_packet": "scapy:Ether(src='3c:fd:fe:b8:99:a4', dst='MAC_A')/IP(src='192.168.201.100', dst='192.168.200.100')/UDP(sport=10000, dport=20000)",
+	    "the_packet": "scapy:Ether(src='TREX_MAC_A', dst='DUT_MAC_A')/IP(src='192.168.201.100', dst='192.168.200.100')/UDP(sport=10000, dport=20000)",
 	    "enabled": true
 	},
 	{
@@ -21,7 +21,7 @@
 		"measurement"
 	    ],
 	    "traffic_direction": "revunidirectional",
-	    "the_packet": "scapy:Ether(src='MAC_B', dst='3c:fd:fe:bc:f4:e0')/IP(src='192.168.201.150', dst='192.168.200.150')/UDP(sport=40000, dport=30000)",
+	    "the_packet": "scapy:Ether(src='DUT_MAC_B', dst='TREX_MAC_B')/IP(src='192.168.201.150', dst='192.168.200.150')/UDP(sport=40000, dport=30000)",
 	    "enabled": true
 	}
     ]
